@@ -1,0 +1,5 @@
+fastapi==0.95.1
+python_bcrypt==0.3.2
+SQLAlchemy==1.4.41
+sqlmodel==0.0.8
+uvicorn[standard]==0.21.1
