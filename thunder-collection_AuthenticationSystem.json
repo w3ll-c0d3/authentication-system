@@ -1,0 +1,126 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "AuthenticationSystem",
+    "dateExported": "2023-05-03T19:34:15.344Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "bbe02432-ecb1-45d3-a404-39fdb086a575",
+            "colId": "7591e235-4b43-4055-8cc9-e97ae894e174",
+            "containerId": "",
+            "name": "get users",
+            "url": "localhost:8000/users",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-05-01T13:46:12.826Z",
+            "modified": "2023-05-01T13:46:25.440Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "889e9d52-c4a5-45de-b8f9-84dd711bb887",
+            "colId": "7591e235-4b43-4055-8cc9-e97ae894e174",
+            "containerId": "",
+            "name": "get user by id",
+            "url": "localhost:8000/users/{user_id}",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-05-01T13:46:43.322Z",
+            "modified": "2023-05-03T18:13:18.266Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "user_id",
+                    "value": "a666eb31-20b7-4d6f-a6ad-08fff99e2389",
+                    "isPath": true
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "d5aa0e98-da45-45dd-afe0-49c7cebffb4e",
+            "colId": "7591e235-4b43-4055-8cc9-e97ae894e174",
+            "containerId": "",
+            "name": "login",
+            "url": "localhost:8000/users/auth",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-05-01T13:48:06.952Z",
+            "modified": "2023-05-03T18:17:39.361Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"user_01\",\n  \"password\": \"a1234567\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "4287ce91-c159-437e-b945-97048ca8d445",
+            "colId": "7591e235-4b43-4055-8cc9-e97ae894e174",
+            "containerId": "",
+            "name": "delete user",
+            "url": "localhost:8000/users/{user_id}",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2023-05-01T13:49:43.604Z",
+            "modified": "2023-05-03T18:20:50.220Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "user_id",
+                    "value": "cea1e8ae-8581-4fe9-9d71-1b27ef56b092",
+                    "isPath": true
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "d770d05e-19be-4747-a26d-33fe62e2e8ce",
+            "colId": "7591e235-4b43-4055-8cc9-e97ae894e174",
+            "containerId": "",
+            "name": "update user",
+            "url": "localhost:8000/users/{user_id}",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2023-05-01T13:50:18.791Z",
+            "modified": "2023-05-03T18:17:00.055Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "user_id",
+                    "value": "cea1e8ae-8581-4fe9-9d71-1b27ef56b092",
+                    "isPath": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"cpf\": \"00000000000\",\n  \"password\": \"12345678\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "efee1d48-2f9b-4959-ada3-5a64850df543",
+            "colId": "7591e235-4b43-4055-8cc9-e97ae894e174",
+            "containerId": "",
+            "name": "create user",
+            "url": "localhost:8000/users",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2023-05-01T13:52:12.942Z",
+            "modified": "2023-05-03T19:33:37.787Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"cpf\": \"01234567894\",\n  \"username\": \"user_02\",\n  \"password\": \"12345678\",\n  \"first_name\": \"Jeff\",\n  \"last_name\": \"Bezos\",\n  \"age\": \"59\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
